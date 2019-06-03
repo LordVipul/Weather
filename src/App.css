@@ -1,33 +1,121 @@
-.App {
-  text-align: center;
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "Questrial", sans-serif;
+  background: #e1e3e1;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+@-webkit-keyframes btn-hover {
   from {
-    transform: rotate(0deg);
+    background: #49435c;
+    color: #e1e3e1;
   }
   to {
-    transform: rotate(360deg);
+    background: #e1e3e1;
+    color: #49435c;
   }
 }
+
+@keyframes btn-hover {
+  from {
+    background: #49435c;
+    color: #e1e3e1;
+  }
+  to {
+    background: #e1e3e1;
+    color: #49435c;
+  }
+}
+
+/******** HEADER **********/
+header {
+  background: #49435c;
+  padding: 15px 15%;
+  font-size: 28px;
+}
+
+header h1 {
+  font-family: "Josefin Sans", sans-serif;
+  color: #e1e3e1;
+  padding-top: 10px;
+  font-size: 32px;
+}
+
+header h1 span {
+  color: #e1e3e1;
+}
+
+/*********** Form **********/
+form {
+  padding: 10px 15%;
+}
+
+form input {
+  height: 45px;
+  width: 80%;
+  -webkit-appearance: none;
+  padding: 15px 15px;
+  border: 2px solid #49435c;
+  border-right: none;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+form input:focus {
+  outline-color: #e1e3e1;
+}
+
+form button {
+  -webkit-appearance: none;
+  height: 45px;
+  width: 20%;
+  color: #e1e3e1;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 15px auto;
+  border: none;
+  background: #49435c;
+  cursor: pointer;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+form button:hover {
+  background: #e1e3e1;
+  color: #49435c;
+  padding: 13px 28px;
+  border: 2px solid #49435c;
+}
+
+form button:focus {
+  outline-color: #e1e3e1;
+}
+
+/******** Weather data ***********/
+.cityWeather {
+  padding: 15px 15%;
+  color: #414141;
+}
+
+.cityWeather h1 {
+  color: #49435c;
+}
+
+.cityWeather h2 {
+  padding-top: 10px;
+  font-size: 24px;
+}
+
+.cityWeather p {
+  padding-top: 5px;
+  font-size: 18px;
+}
+/*# sourceMappingURL=App.css.map */

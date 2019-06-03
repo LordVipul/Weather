@@ -1,0 +1,105 @@
+$dark_color: #49435c;
+$light_color: #e1e3e1;
+$grey_color: #414141;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Questrial", sans-serif;
+  background: $light_color;
+}
+
+@keyframes btn-hover {
+  from {
+    background: $dark_color;
+    color: $light_color;
+  }
+  to {
+    background: $light_color;
+    color: $dark_color;
+  }
+}
+
+/******** HEADER **********/
+header {
+  background: $dark_color;
+  padding: 15px 15%;
+  font-size: 28px;
+
+  h1 {
+    font-family: "Josefin Sans", sans-serif;
+    color: $light_color;
+    padding-top: 10px;
+    font-size: 32px;
+    span {
+      color: $light_color;
+    }
+  }
+}
+
+/*********** Form **********/
+form {
+  padding: 10px 15%;
+
+  input {
+    height: 45px;
+    width: 80%;
+    -webkit-appearance: none;
+    padding: 15px 15px;
+    border: 2px solid $dark_color;
+    border-right: none;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    &:focus {
+      outline-color: $light_color;
+    }
+  }
+
+  button {
+    -webkit-appearance: none;
+    height: 45px;
+    width: 20%;
+    color: $light_color;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 15px auto;
+    border: none;
+    background: $dark_color;
+    cursor: pointer;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    transition: 300ms;
+
+    &:hover {
+      background: $light_color;
+      color: $dark_color;
+      padding: 13px 28px;
+      border: 2px solid $dark_color;
+    }
+    &:focus {
+      outline-color: $light_color;
+    }
+  }
+}
+
+/******** Weather data ***********/
+.cityWeather {
+  padding: 15px 15%;
+  color: $grey_color;
+  h1 {
+    color: $dark_color;
+  }
+  h2 {
+    padding-top: 10px;
+    font-size: 24px;
+  }
+  p {
+    padding-top: 5px;
+    font-size: 18px;
+  }
+}
